@@ -34,8 +34,8 @@ Esiehto: ylläpitäjä on kirjautunut järjestelmään ja hänellä on tarvittav
 Jälkiehto: Uusi kysely luodaan ja lisätään järjestelmään.
 Käyttötapausten kulku:
 
-Järjestelmänvalvoja valitsee "Luo kysely" -vaihtoehdon hallintapaneelista.
-Järjestelmä esittää järjestelmänvalvojalle lomakkeen, jossa hän syöttää kyselyn tiedot, kuten kysymyksen ja valinnat.
+Ylläpitäjä valitsee "Luo kysely" -vaihtoehdon hallintapaneelista.
+Järjestelmä esittää lomakkeen, jossa hän syöttää kyselyn tiedot, kuten kysymyksen ja valinnat.
 Ylläpitäjä täyttää vaaditut tiedot ja lähettää lomakkeen.
 Järjestelmä vahvistaa syötetyt tiedot varmistaakseen, että ne täyttävät määritetyt vaatimukset.
 Jos vahvistus onnistuu, järjestelmä luo uuden kyselyn annetuilla tiedoilla ja antaa sille yksilöllisen tunnisteen.
@@ -51,7 +51,7 @@ Esiehto: ylläpitäjä on kirjautunut järjestelmään ja hänellä on tarvittav
 Jälkiehto: Valittu kysely poistetaan järjestelmästä, eikä se ole enää käyttäjien käytettävissä.
 Käyttötapausten kulku:
 
-ylläpitäjä avaa järjestelmänvalvojan hallintapaneelin ja valitsee "Poista kysely" -vaihtoehdon.
+ylläpitäjä avaa hallintapaneelin ja valitsee "Poista kysely" -vaihtoehdon.
 ylläpitäjä valitsee listalta poistettavan kyselyn.
 Järjestelmä poistaa valitun kyselyn järjestelmästä ja siihen liittyvät tiedot.
 Järjestelmä päivittää aktiivisten kyselyjen luettelon ja poistaa poistetun kyselyn luettelosta.
