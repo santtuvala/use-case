@@ -1,0 +1,60 @@
+Käyttötapauksen nimi: Kyselyjen selaaminen
+Käyttäjät: Käyttäjä
+Laukaisija: Käyttäjä haluaa selata kyselyitä.
+Esiehto: Käyttäjä on mennyt äänestys sivustolle.
+Jälkiehto: Käyttäjälle esitetään luettelo kyselyistä, joita hän voi selata.
+Käyttötapauskulku:
+
+Käyttäjä avaa sivuston.
+Järjestelmä näyttää luettelon kyselyistä.
+Käyttäjä selaa kyselyjen luetteloa.
+Käyttäjä voi halutessaan äänestää kyselyssä.
+Poikkeuksellinen toiminta:
+Sivulla ei ole kyselyjä.
+
+Käyttötapauksen nimi: Äänestäminen valitussa kyselyssä
+Käyttäjät: Käyttäjä
+Laukaisija: Käyttäjä haluaa äänestää kyselyssä.
+Esiehto: Käyttäjä on mennyt äänestys sivustolle.
+Jälkiehto: Käyttäjän ääni tallennetaan ja lisätään kyselyn tuloksiin.
+Käyttötapauskulku:
+
+Käyttäjä valitsee tietyn kyselyn saatavilla olevien kyselyjen luettelosta.
+Järjestelmä näyttää kyselyn tiedot ja käytettävissä olevat äänestysvaihtoehdot.
+Käyttäjä valitsee vaihtoehdon ja antaa äänensä.
+Järjestelmä tallentaa käyttäjän äänet ja päivittää kyselyn tulokset.
+Käyttäjä voi tarkastella kyselyn nykyistä tilannetta.
+Poikkeuksellinen toiminta:
+Jos käyttäjä on jo äänestänyt kyselyssä
+
+Käyttötapaus: Luo kysely
+Käyttäjät: ylläpitäjä
+Laukaisija: ylläpitäjä haluaa luoda uuden kyselyn.
+Esiehto: ylläpitäjä on kirjautunut järjestelmään ja hänellä on tarvittavat oikeudet kyselyn luomiseen.
+Jälkiehto: Uusi kysely luodaan ja lisätään järjestelmään.
+Käyttötapausten kulku:
+
+Järjestelmänvalvoja valitsee "Luo kysely" -vaihtoehdon hallintapaneelista.
+Järjestelmä esittää järjestelmänvalvojalle lomakkeen, jossa hän syöttää kyselyn tiedot, kuten kysymyksen ja valinnat.
+Ylläpitäjä täyttää vaaditut tiedot ja lähettää lomakkeen.
+Järjestelmä vahvistaa syötetyt tiedot varmistaakseen, että ne täyttävät määritetyt vaatimukset.
+Jos vahvistus onnistuu, järjestelmä luo uuden kyselyn annetuilla tiedoilla ja antaa sille yksilöllisen tunnisteen.
+Järjestelmä lisää juuri luodun kyselyn järjestelmän aktiivisten kyselyjen luetteloon.
+Poikkeuksellinen toiminta:
+
+Jos järjestelmänvalvoja syöttää lomakkeeseen virheellisiä tai epätäydellisiä.
+
+Käyttötapaus: Poista kysely
+Käyttäjät: ylläpitäjä
+Laukaisija: ylläpitäjä haluaa poistaa olemassa olevan kyselyn.
+Esiehto: ylläpitäjä on kirjautunut järjestelmään ja hänellä on tarvittavat oikeudet kyselyn poistamiseen.
+Jälkiehto: Valittu kysely poistetaan järjestelmästä, eikä se ole enää käyttäjien käytettävissä.
+Käyttötapausten kulku:
+
+ylläpitäjä avaa järjestelmänvalvojan hallintapaneelin ja valitsee "Poista kysely" -vaihtoehdon.
+ylläpitäjä valitsee listalta poistettavan kyselyn.
+Järjestelmä poistaa valitun kyselyn järjestelmästä ja siihen liittyvät tiedot.
+Järjestelmä päivittää aktiivisten kyselyjen luettelon ja poistaa poistetun kyselyn luettelosta.
+Poikkeuksellinen toiminta:
+
+Jos järjestelmänvalvojalla ei ole tarvittavia oikeuksia kyselyn poistamiseen
